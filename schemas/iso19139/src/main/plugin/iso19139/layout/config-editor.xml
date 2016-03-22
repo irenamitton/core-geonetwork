@@ -272,8 +272,28 @@
 
   <!-- View configuration -->
   <views>
-    <!--Turn off INSPIRE view by default -->
-    <view name="inspire" upAndDownControlHidden="true" disabled="true">
+    <!--Turn off INSPIRE view by default  disabled="true"-->
+    <view name="danube" upAndDownControlHidden="true">
+      <tab id="danube" default="true" mode="flat">
+        <section name="danube_identification">
+          <field name="danube_title"
+            xpath="/gmd:MD_Metadata/gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation/gmd:title"/>
+          <field name="danube_abstract"
+            xpath="/gmd:MD_Metadata/gmd:identificationInfo/*/gmd:abstract"/>
+          <field name="danube_type"
+          	xpath="/gmd:MD_Metadata/gmd:hierarchyLevel"/>
+        </section>
+        </tab>
+        <tab id="danube_inspire" mode="flat">
+        	<section >
+				<field name="danube_keyword_inspire"
+            	xpath="/gmd:MD_Metadata/gmd:identificationInfo/*/
+            	gmd:descriptiveKeywords
+            	[contains(gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title/gco:CharacterString, 'INSPIRE themes')]"/>
+        	</section>
+        </tab>
+    </view>
+    <view name="inspire" upAndDownControlHidden="true">
       <tab id="inspire" default="true" mode="flat">
         <section name="resource">
           <field

@@ -1433,25 +1433,25 @@
 	</codelist>
 	<!-- ==================================================== -->
 	<codelist name="gmd:MD_ScopeCode">
-		<entry>
+		<entry hideInEditMode="true">
 			<code>attribute</code>
 			<label>Attribute</label>
 			<description>Information applies to the attribute class</description>
 		</entry>
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<entry>
+		<entry hideInEditMode="true">
 			<code>attributeType</code>
 			<label>Attribute type</label>
 			<description>Information applies to the characteristic of a feature</description>
 		</entry>
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<entry>
+		<entry hideInEditMode="true">
 			<code>collectionHardware</code>
 			<label>Collection hardware</label>
 			<description>Information applies to the collection hardware class</description>
 		</entry>
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<entry>
+		<entry hideInEditMode="true">
 			<code>collectionSession</code>
 			<label>Collection session</label>
 			<description>Information applies to the collection session</description>
